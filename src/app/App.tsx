@@ -13,7 +13,10 @@ import docImage4 from "../assets/WhatsApp Image 2026-01-02 at 8.45.29 PM.jpeg";
 import docImage5 from "../assets/WhatsApp Image 2026-01-02 at 8.47.29 PM.jpeg";
 import docImage6 from "../assets/WhatsApp Image 2026-01-02 at 8.48.26 PM.jpeg";
 import aboutImage from "../assets/WhatsApp Image 2026-01-02 at 8.58.45 PM.jpeg";
-
+import fukiKnowImage from "../assets/Screenshot 2026-01-07 235455.png";
+import sustainifyImage from "../assets/Screenshot 2026-01-07 234406.png";
+import project1Image from "../assets/Screenshot 2026-01-08 000151.png";
+import project2Image from "../assets/Screenshot 2026-01-08 001006.png";
 
 
 export default function App() {
@@ -71,8 +74,8 @@ export default function App() {
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
                   className={`text-sm transition-colors ${activeSection === item.toLowerCase()
-                      ? 'text-cyan-600 font-semibold'
-                      : 'text-gray-600 hover:text-cyan-600'
+                    ? 'text-cyan-600 font-semibold'
+                    : 'text-gray-600 hover:text-cyan-600'
                     }`}
                 >
                   {item}
@@ -99,8 +102,8 @@ export default function App() {
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
                   className={`block w-full text-left py-2 px-3 rounded-lg transition-colors ${activeSection === item.toLowerCase()
-                      ? 'bg-cyan-100 text-cyan-600 font-semibold'
-                      : 'text-gray-600 hover:bg-gray-100'
+                    ? 'bg-cyan-100 text-cyan-600 font-semibold'
+                    : 'text-gray-600 hover:bg-gray-100'
                     }`}
                 >
                   {item}
@@ -157,34 +160,78 @@ export default function App() {
       </section>
 
       {/* About Section */}
-<section id="about" className="py-16 px-4">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-      About Me
-    </h2>
+      <section id="about" className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            About Me
+          </h2>
 
-    <div className="bg-white rounded-2xl shadow-lg p-8 space-y-8">
-      
-      {/* About Text */}
-      <p className="text-gray-700 leading-relaxed text-lg">
-        Final-year <strong>Information Systems student at Universitas Indonesia</strong> with a passion for leveraging data and technology to drive digital transformation across business, product, and user experience. Former Product Team at <strong>Vidio Dot Com (EMTEK Group)</strong>, selected as <strong>1 of 94 interns from 23,000+ Vidio applicants</strong> in Magang Berdampak Batch 1. Experienced in fast-paced content QA, subscription testing, TVOD user sentiment research, and ISO system backlog delivery.
-      </p>
+          <div className="bg-white rounded-2xl shadow-lg p-8 space-y-8">
 
-      {/* About Image */}
-      <div className="flex justify-center">
-        <div className="rounded-xl overflow-hidden shadow-md max-w-3xl">
-          <img
-            src={aboutImage}
-            alt="About Documentation"
-            className="w-full h-auto object-contain"
-          />
+            {/* About Text */}
+            <p className="text-gray-700 leading-relaxed text-lg">
+              Final-year <strong>Information Systems student at Universitas Indonesia</strong> with a passion for leveraging data and technology to drive digital transformation across business, product, and user experience. Former Product Team at <strong>Vidio Dot Com (EMTEK Group)</strong>, selected as <strong>1 of 94 interns from 23,000+ Vidio applicants</strong> in Magang Berdampak Batch 1. Experienced in fast-paced content QA, subscription testing, TVOD user sentiment research, and ISO system backlog delivery.
+            </p>
+
+            {/* About Image */}
+            <div className="flex justify-center">
+              <div className="rounded-xl overflow-hidden shadow-md max-w-3xl">
+                <img
+                  src={aboutImage}
+                  alt="About Documentation"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
+      </section>
 
-    </div>
-  </div>
-</section>
+      {/* Education Section */}
+      <section id="education" className="py-16 px-4 bg-gradient-to-br from-cyan-50 to-blue-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-center gap-3 mb-12">
+            <GraduationCap className="text-cyan-600" size={32} />
+            <h2 className="text-3xl font-bold text-gray-900">Education</h2>
+          </div>
 
+          <div className="bg-white rounded-2xl shadow-lg p-8">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900">Universitas Indonesia</h3>
+                <p className="text-cyan-600 text-lg font-semibold">Bachelor of Information System</p>
+              </div>
+              <span className="text-gray-500 bg-cyan-50 px-4 py-2 rounded-full">2022 - Present</span>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-semibold text-gray-900 mb-2">Relevant Coursework:</h4>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'Digital Media Marketing',
+                  'Systems Analysis and Design',
+                  'Enterprise Application Architecture',
+                  'Introduction to Statistics',
+                  'Artificial Intelligence and Data Science'
+                ].map((course) => (
+                  <span key={course} className="bg-cyan-50 text-cyan-700 px-3 py-1 rounded-lg text-sm">
+                    {course}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-cyan-50 to-blue-50 p-4 rounded-lg">
+              <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                <Award className="text-cyan-600" size={20} />
+                Achievement
+              </h4>
+              <p className="text-gray-700">Finalist of Digital Exhibition Business Plan Competition at Universitas Padjadjaran (2024)</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Work Experience Section */}
       <section id="experience" className="py-16 px-4 bg-gradient-to-br from-cyan-50 to-blue-50">
@@ -384,51 +431,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Education Section */}
-      <section id="education" className="py-16 px-4 bg-gradient-to-br from-cyan-50 to-blue-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-12">
-            <GraduationCap className="text-cyan-600" size={32} />
-            <h2 className="text-3xl font-bold text-gray-900">Education</h2>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900">Universitas Indonesia</h3>
-                <p className="text-cyan-600 text-lg font-semibold">Bachelor of Information System</p>
-              </div>
-              <span className="text-gray-500 bg-cyan-50 px-4 py-2 rounded-full">2022 - Present</span>
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-semibold text-gray-900 mb-2">Relevant Coursework:</h4>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  'Digital Media Marketing',
-                  'Systems Analysis and Design',
-                  'Enterprise Application Architecture',
-                  'Introduction to Statistics',
-                  'Artificial Intelligence and Data Science'
-                ].map((course) => (
-                  <span key={course} className="bg-cyan-50 text-cyan-700 px-3 py-1 rounded-lg text-sm">
-                    {course}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-cyan-50 to-blue-50 p-4 rounded-lg">
-              <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
-                <Award className="text-cyan-600" size={20} />
-                Achievement
-              </h4>
-              <p className="text-gray-700">Finalist of Digital Exhibition Business Plan Competition at Universitas Padjadjaran (2024)</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Projects Section */}
       <section id="projects" className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
@@ -438,42 +440,213 @@ export default function App() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Project 1 */}
+
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <a href="http://bit.ly/43GS7Xw" target="_blank" rel="noopener noreferrer" className="flex justify-between items-start mb-4 group">
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Employee Welfare Data</h3>
+              <a
+                href="https://drive.google.com/file/d/1rV--MXUS1JPQyTtjoAzxmLKu0RI8jCTG/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-between items-start mb-4 group"
+              >
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                  Sustainify (Mobile Climate-Awareness App)
+                </h3>
                 <ExternalLink className="text-cyan-600 group-hover:text-cyan-700" size={20} />
               </a>
-              <p className="text-gray-600 text-sm mb-3">Fasilkom Universitas Indonesia • April 2025 - June 2025</p>
-              <ul className="space-y-2 text-gray-700 text-sm">
+
+              <p className="text-gray-600 text-sm mb-3">UI/UX Design Project</p>
+
+              <ul className="space-y-2 text-gray-700 text-sm mb-6">
                 <li className="flex gap-2">
                   <span className="text-cyan-500">•</span>
-                  <span>Evaluation pipeline using <strong>Python</strong> to streamline repeated reporting with Diptolk team, <strong>ranked 2nd in a Kaggle Competition</strong> and presented to faculty</span>
+                  <span>
+                    Designed a mobile climate-awareness app with <strong>5 core features</strong>, including weather information,
+                    environmental news, community forum, and EcoLearn
+                  </span>
                 </li>
+
                 <li className="flex gap-2">
                   <span className="text-cyan-500">•</span>
-                  <span>Streamlined data preprocessing and visualized insights from <strong>9,000+ records</strong> for an Artificial Intelligence & Data Science project, <strong>cutting processing time by 85%</strong></span>
+                  <span>
+                    Conducted user research through interviews and personas, producing <strong>2 validated user personas</strong> and
+                    mapping <strong>4 end-to-end user journeys</strong>
+                  </span>
+                </li>
+
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Created information architecture, task analysis, and high-fidelity prototypes covering
+                    <strong> 7 key user tasks</strong>
+                  </span>
+                </li>
+
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Executed usability testing with <strong>10 respondents</strong>, achieving a
+                    <strong> SUS score of 83.5 (Grade A)</strong>
+                  </span>
+                </li>
+
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Iterated UI design based on usability findings, resolving <strong>4 major usability issues</strong>
+                  </span>
                 </li>
               </ul>
+
+              {/* Image */}
+              <img
+                src={sustainifyImage}
+                alt="Sustainify UI Preview"
+                className="w-full rounded-xl border border-gray-200"
+              />
+            </div>
+
+            {/* FukiKnow project card */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <a
+                href="https://drive.google.com/file/d/1bv45Xs5JrkCu5ncDeNT_q-F1g92xUklD/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-between items-start mb-4 group"
+              >
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                  FukiKnow (Knowledge Management Platform)
+                </h3>
+                <ExternalLink className="text-cyan-600 group-hover:text-cyan-700" size={20} />
+              </a>
+
+              <p className="text-gray-600 text-sm mb-3">UI/UX & Product Design Project</p>
+
+              <ul className="space-y-2 text-gray-700 text-sm mb-6">
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Led UI/UX and product design for a platform with <strong>7 core features</strong>, addressing
+                    <strong> 5+ pain points</strong> across <strong>6 divisions and 10 departments</strong>
+                  </span>
+                </li>
+
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Conducted knowledge process and user flow analysis using the <strong>SECI model</strong> to capture tacit knowledge
+                  </span>
+                </li>
+
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Designed end-to-end user journeys and interactive prototypes in <strong>Figma</strong>, collaborating with
+                    <strong> 8–12 stakeholders</strong>
+                  </span>
+                </li>
+
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Defined product requirements for repository, notification, calendar, and progress tracking features
+                  </span>
+                </li>
+              </ul>
+
+              {/* Image */}
+              <img
+                src={fukiKnowImage}
+                alt="FukiKnow UI Preview"
+                className="w-full rounded-xl border border-gray-200"
+              />
+            </div>
+
+            {/* Project 1 */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <a
+                href="https://drive.google.com/drive/folders/1szJSHNlsdIS06PEXitjN8HhbVr4qvEHq"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-between items-start mb-4 group"
+              >
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                  Employee Welfare Data
+                </h3>
+                <ExternalLink className="text-cyan-600 group-hover:text-cyan-700" size={20} />
+              </a>
+
+              <p className="text-gray-600 text-sm mb-3">
+                Fasilkom Universitas Indonesia • April 2025 – June 2025
+              </p>
+
+              <ul className="space-y-2 text-gray-700 text-sm mb-6">
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Built an evaluation pipeline using <strong>Python</strong> to streamline repeated reporting with Diptolk team,
+                    <strong> ranking 2nd in a Kaggle competition</strong> and presented findings to faculty
+                  </span>
+                </li>
+
+                <li className="flex gap-2">
+                  <span className="text-cyan-500">•</span>
+                  <span>
+                    Processed and visualized insights from <strong>9,000+ records</strong> for an AI & Data Science project,
+                    <strong> reducing processing time by 85%</strong>
+                  </span>
+                </li>
+              </ul>
+
+              {/* Image */}
+              <img
+                src={project1Image}
+                alt="Employee Welfare Data Project Preview"
+                className="w-full rounded-xl border border-gray-200"
+              />
             </div>
 
             {/* Project 2 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <a href="http://bit.ly/43T6syH" target="_blank" rel="noopener noreferrer" className="flex justify-between items-start mb-4 group">
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">"Oke Gas" Meta Ads Performance</h3>
+              <a
+                href="http://bit.ly/43T6syH"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-between items-start mb-4 group"
+              >
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                  "Oke Gas" Meta Ads Performance
+                </h3>
                 <ExternalLink className="text-cyan-600 group-hover:text-cyan-700" size={20} />
               </a>
-              <p className="text-gray-600 text-sm mb-3">Fasilkom Universitas Indonesia • May 2025</p>
-              <ul className="space-y-2 text-gray-700 text-sm">
+
+              <p className="text-gray-600 text-sm mb-3">
+                Fasilkom Universitas Indonesia • May 2025
+              </p>
+
+              <ul className="space-y-2 text-gray-700 text-sm mb-6">
                 <li className="flex gap-2">
                   <span className="text-cyan-500">•</span>
-                  <span>Independently analyzed <strong>12+ Meta ads</strong> using Excel (pivot tables & charts) for a Digital Media Marketing project, focusing on cost-efficiency and content impact</span>
+                  <span>
+                    Independently analyzed <strong>12+ Meta ads</strong> using Excel (pivot tables & charts) for a Digital Media
+                    Marketing project, focusing on cost efficiency and content impact
+                  </span>
                 </li>
+
                 <li className="flex gap-2">
                   <span className="text-cyan-500">•</span>
-                  <span>Identified <strong>high-CTR strategies</strong> to target swing voters (18–35) based on audience behavior patterns and KPIs</span>
+                  <span>
+                    Identified <strong>high-CTR strategies</strong> to target swing voters (18–35) based on audience behavior
+                    patterns and KPI analysis
+                  </span>
                 </li>
               </ul>
+
+              {/* Image */}
+              <img
+                src={project2Image}
+                alt="Meta Ads Performance Dashboard Preview"
+                className="w-full rounded-xl border border-gray-200"
+              />
             </div>
 
             {/* Project 3 */}
@@ -602,57 +775,57 @@ export default function App() {
       </section>
 
       {/* Documentation Section */}
-<div className="border-t border-gray-200 pt-6">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-      <img
-        src={docImage1}
-        alt="Documentation 1"
-        className="w-full h-full object-contain"
-      />
-    </div>
+      <div className="border-t border-gray-200 pt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img
+              src={docImage1}
+              alt="Documentation 1"
+              className="w-full h-full object-contain"
+            />
+          </div>
 
-    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-      <img
-        src={docImage2}
-        alt="Documentation 2"
-        className="w-full h-full object-contain"
-      />
-    </div>
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img
+              src={docImage2}
+              alt="Documentation 2"
+              className="w-full h-full object-contain"
+            />
+          </div>
 
-    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-      <img
-        src={docImage3}
-        alt="Documentation 3"
-        className="w-full h-full object-contain"
-      />
-    </div>
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img
+              src={docImage3}
+              alt="Documentation 3"
+              className="w-full h-full object-contain"
+            />
+          </div>
 
-    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-      <img
-        src={docImage4}
-        alt="Documentation 4"
-        className="w-full h-full object-contain"
-      />
-    </div>
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img
+              src={docImage4}
+              alt="Documentation 4"
+              className="w-full h-full object-contain"
+            />
+          </div>
 
-    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-      <img
-        src={docImage5}
-        alt="Documentation 5"
-        className="w-full h-full object-contain"
-      />
-    </div>
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img
+              src={docImage5}
+              alt="Documentation 5"
+              className="w-full h-full object-contain"
+            />
+          </div>
 
-    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-      <img
-        src={docImage6}
-        alt="Documentation 6"
-        className="w-full h-full object-contain"
-      />
-    </div>
-  </div>
-</div>
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img
+              src={docImage6}
+              alt="Documentation 6"
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+      </div>
 
 
       {/* Footer */}
