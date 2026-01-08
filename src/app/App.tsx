@@ -17,7 +17,8 @@ import fukiKnowImage from "../assets/Screenshot 2026-01-07 235455.png";
 import sustainifyImage from "../assets/Screenshot 2026-01-07 234406.png";
 import project1Image from "../assets/Screenshot 2026-01-08 000151.png";
 import project2Image from "../assets/Screenshot 2026-01-08 001006.png";
-
+import project3Image from "../assets/Screenshot 2026-01-08 154555.png";
+import project4Image from "../assets/Screenshot 2026-01-08 154403.png";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -651,40 +652,89 @@ export default function App() {
 
             {/* Project 3 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <a href="https://sekar-portfolio-two.vercel.app/project/netflix" target="_blank" rel="noopener noreferrer" className="flex justify-between items-start mb-4 group">
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Netflix Userbase Year 2023</h3>
+              <a
+                href="https://sekar-portfolio-two.vercel.app/project/netflix"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-between items-start mb-4 group"
+              >
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                  Netflix Userbase Year 2023
+                </h3>
                 <ExternalLink className="text-cyan-600 group-hover:text-cyan-700" size={20} />
               </a>
-              <p className="text-gray-600 text-sm mb-3">Independent Project • June 2024</p>
-              <ul className="space-y-2 text-gray-700 text-sm">
+
+              <p className="text-gray-600 text-sm mb-3">
+                Independent Project • June 2024
+              </p>
+
+              <ul className="space-y-2 text-gray-700 text-sm mb-4">
                 <li className="flex gap-2">
                   <span className="text-cyan-500">•</span>
-                  <span>Built <strong>8+ dynamic Microsoft Power BI visuals</strong> to analyze 2,500+ users and 31,000+ revenue data effectively</span>
+                  <span>
+                    Built <strong>8+ dynamic Microsoft Power BI visuals</strong> to analyze
+                    2,500+ users and 31,000+ revenue data effectively
+                  </span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-cyan-500">•</span>
-                  <span>Improved business insight clarity across <strong>10 countries and 4 device types</strong> for strategic decision-making</span>
+                  <span>
+                    Improved business insight clarity across{" "}
+                    <strong>10 countries and 4 device types</strong> for strategic
+                    decision-making
+                  </span>
                 </li>
               </ul>
+
+              {/* Image Project 3 */}
+              <img
+                src={project3Image}
+                alt="Netflix Userbase Dashboard"
+                className="rounded-xl border shadow-sm"
+              />
             </div>
 
             {/* Project 4 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <a href="https://sekar-portfolio-two.vercel.app/project/health-insurance" target="_blank" rel="noopener noreferrer" className="flex justify-between items-start mb-4 group">
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Health Insurance and Facilities in West Java</h3>
+              <a
+                href="https://sekar-portfolio-two.vercel.app/project/health-insurance"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-between items-start mb-4 group"
+              >
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                  Health Insurance and Facilities in West Java
+                </h3>
                 <ExternalLink className="text-cyan-600 group-hover:text-cyan-700" size={20} />
               </a>
-              <p className="text-gray-600 text-sm mb-3">RevoU • June 2024</p>
-              <ul className="space-y-2 text-gray-700 text-sm">
+
+              <p className="text-gray-600 text-sm mb-3">
+                RevoU • June 2024
+              </p>
+
+              <ul className="space-y-2 text-gray-700 text-sm mb-4">
                 <li className="flex gap-2">
                   <span className="text-cyan-500">•</span>
-                  <span>Analyzed <strong>35M+ insurance records and 55,000+ health facilities</strong> in West Java using Tableau as part of RevoU Data Analytics program</span>
+                  <span>
+                    Analyzed <strong>35M+ insurance records and 55,000+ health facilities</strong>{" "}
+                    in West Java using Tableau as part of RevoU Data Analytics program
+                  </span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-cyan-500">•</span>
-                  <span>Highlighted service disparities across 10 districts, supporting data storytelling with <strong>94% coverage insight</strong></span>
+                  <span>
+                    Highlighted service disparities across 10 districts, supporting data
+                    storytelling with <strong>94% coverage insight</strong>
+                  </span>
                 </li>
               </ul>
+
+              {/* Image Project 4 */}
+              <img
+                src={project4Image}
+                alt="West Java Health Insurance Dashboard"
+                className="rounded-xl border shadow-sm"
+              />
             </div>
           </div>
         </div>
