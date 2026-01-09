@@ -419,9 +419,22 @@ export default function App() {
                 <div className="w-2 h-8 bg-gradient-to-b from-cyan-500 to-blue-500 rounded-full"></div>
                 Soft Skills
               </h3>
+
               <div className="flex flex-wrap gap-2">
-                {['Critical Thinking', 'Problem Solving', 'Technical Communication', 'Time Management'].map((skill) => (
-                  <span key={skill} className="bg-gradient-to-r from-cyan-100 to-blue-100 text-cyan-700 px-4 py-2 rounded-full text-sm">
+                {[
+                  'Effective Communication',
+                  'Critical Thinking',
+                  'Analytical Thinking',
+                  'Problem Solving',
+                  'Attention to Detail',
+                  'Cross-functional Collaboration',
+                  'Technical Documentation',
+                  'Time Management',
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-gradient-to-r from-cyan-100 to-blue-100 text-cyan-700 px-4 py-2 rounded-full text-sm"
+                  >
                     {skill}
                   </span>
                 ))}
@@ -434,12 +447,23 @@ export default function App() {
                 <div className="w-2 h-8 bg-gradient-to-b from-cyan-500 to-blue-500 rounded-full"></div>
                 Hard Skills
               </h3>
+
               <div className="space-y-3 text-gray-700 text-sm">
-                <p><strong>Microsoft:</strong> Excel, Word, PowerPoint</p>
-                <p><strong>Google Workspace:</strong> Docs, Sheets, Slides, Chat</p>
-                <p><strong>Data Visualization:</strong> Power BI, Tableau, Figma</p>
-                <p><strong>Programming:</strong> Python, Java, SQL</p>
-                <p><strong>Management Tools:</strong> Git, DBeaver, Postman, Basecamp</p>
+                <p>
+                  <strong>Google Workspace:</strong> Sheets, Docs, Slides
+                </p>
+                <p>
+                  <strong>CMS & Content Ops:</strong> CMS Familiarity, Metadata Handling
+                </p>
+                <p>
+                  <strong>Data Visualization:</strong> Power BI, Tableau, Figma, Looker Studio
+                </p>
+                <p>
+                  <strong>Programming:</strong> Python, Java, SQL
+                </p>
+                <p>
+                  <strong>Tools:</strong> Git, DBeaver, BigQuery, Postman, Vercel
+                </p>
               </div>
             </div>
 
