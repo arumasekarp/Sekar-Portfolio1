@@ -175,7 +175,16 @@ export default function App() {
 
             {/* About Text */}
             <p className="text-gray-700 leading-relaxed text-lg">
-              Final-year <strong>Information Systems student at Universitas Indonesia</strong> with a passion for leveraging data and technology to drive digital transformation across business, product, and user experience. Former Product Team at <strong>Vidio Dot Com (EMTEK Group)</strong>, selected as <strong>1 of 94 interns from 23,000+ Vidio applicants</strong> in Magang Berdampak Batch 1. Experienced in fast-paced content QA, subscription testing, TVOD user sentiment research, and ISO system backlog delivery.
+              Final-year <strong>Information Systems student at Universitas Indonesia</strong> with strong exposure to
+              <strong> IT project coordination, documentation, and operational support</strong> within corporate and
+              cross-functional environments. Selected as <strong>1 of 94 interns from 23,000+ applicants</strong> in
+               <strong> Magang Berdampak Batch 1</strong>, reflecting adaptability and the ability to operate in
+              structured, fast-paced settings. Experienced in supporting <strong>project planning, requirement
+                documentation, meeting coordination, timeline tracking, and stakeholder communication</strong>, as well as
+              participating in <strong>UAT/SIT activities</strong> and project closure documentation. Familiar with
+              internal IT operations including <strong>asset documentation, system compliance, and process standardization</strong>.
+              Highly detail-oriented, organized, and comfortable working closely with IT teams to ensure smooth
+              project execution and day-to-day operational efficiency.
             </p>
 
             {/* About Image */}
