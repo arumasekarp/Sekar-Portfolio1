@@ -19,6 +19,10 @@ import project1Image from "../assets/Screenshot 2026-01-08 000151.png";
 import project2Image from "../assets/Screenshot 2026-01-08 001006.png";
 import project3Image from "../assets/Screenshot 2026-01-08 154555.png";
 import project4Image from "../assets/Screenshot 2026-01-08 154403.png";
+import byonCombatImage from "../assets/ATK-BOLA_Byon-Combat-Showbiz-6.png";
+import hssSeriesImage from "../assets/ATK-BOLANET_HSS-Series-6_Fight-Card-reckma41rz0eljkcogsoegl0v7w0qq2duvrolrrv2m.jpg";
+import mmaBattleImage from "../assets/ATK-Bolanet_ONE-Pride-MMA-Battle-for-Glory-2025_Fight-Card.png";
+import additionalCombatImage from "../assets/images.jpg";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -259,11 +263,11 @@ export default function App() {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
-                  <span>Analyzed <strong>50,000+ user sentiments</strong> from combat sports events, delivering insight decks for product prioritization and UX improvements</span>
+                  <span>Analyzed <strong>70,000+ user sentiments</strong> from combat sports events (BYON Combat, HSS, and MMA), delivering insight decks for product prioritization and UX improvements, in collaboration with the Research team</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
-                  <span>Owned <strong>15+ ISO payment backlog stories</strong> (internal system), from requirement validation to staging testing and production (<strong>~75% phase-1 delivery</strong>)</span>
+                  <span>Owned <strong>epic and 15+ ISO payment backlog stories</strong> (KOL internal system), from requirement validation to staging testing and production (<strong>~75% phase-1 delivery</strong>)</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
@@ -277,14 +281,23 @@ export default function App() {
                   <span className="text-cyan-500 mt-1">•</span>
                   <span>Executed QC on <strong>70+ AVOD and SVOD contents</strong>, identifying and reporting critical platform issues</span>
                 </li>
+                <li className="flex gap-3">
+                  <span className="text-cyan-500 mt-1">•</span>
+                  <span><strong>Analyzed 300+ student email domain data</strong> on the student package static page and delivered insights to the Service Growth team</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-cyan-500 mt-1">•</span>
+                  <span><strong>Managed 270+ Google Calendar schedules</strong> for content checking coordination with the Disco Reco team</span>
+                </li>
               </ul>
               {/* Profile & Certificate Images */}
               <div className="border-t border-gray-200 pt-6">
                 <h4 className="text-sm font-semibold text-gray-700 mb-3">
-                  Certification
+                  Certification & Work Highlights
                 </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Profile Photo */}
                   <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
                     <img
                       src={wahyuProfilePhoto}
@@ -293,10 +306,45 @@ export default function App() {
                     />
                   </div>
 
+                  {/* Internship Certificate */}
                   <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
                     <img
                       src={vidioSertifikat}
                       alt="Vidio Magang Berdampak Certificate"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* BYON Combat */}
+                  <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <img
+                      src={byonCombatImage}
+                      alt="BYON Combat Series"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* HSS Series */}
+                  <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <img
+                      src={hssSeriesImage}
+                      alt="HSS Series"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* ONE Pride MMA */}
+                  <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <img
+                      src={mmaBattleImage}
+                      alt="ONE Pride MMA Battle for Glory"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <img
+                      src={additionalCombatImage}
+                      alt="Combat Sports Event Highlight"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -827,56 +875,57 @@ export default function App() {
       {/* Documentation Section */}
       <div className="border-t border-gray-200 pt-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
             <img
               src={docImage1}
               alt="Documentation 1"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
             <img
               src={docImage2}
               alt="Documentation 2"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
             <img
               src={docImage3}
               alt="Documentation 3"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
             <img
               src={docImage4}
               alt="Documentation 4"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
             <img
               src={docImage5}
               alt="Documentation 5"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
             <img
               src={docImage6}
               alt="Documentation 6"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
+
         </div>
       </div>
-
 
       {/* Footer */}
       <footer className="bg-gradient-to-r from-cyan-600 via-blue-600 to-sky-600 text-white py-12 px-4">
