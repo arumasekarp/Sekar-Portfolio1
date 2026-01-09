@@ -271,7 +271,7 @@ export default function App() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
-                  <span>Developed an AppSheet-based solution to streamline and reform the <strong>processing of 5,000+ subscription</strong> voucher requests</span>
+                  <span>Developed an AppSheet-based solution to streamline and reform the <strong>processing of 5,000+ subscription</strong> voucher requests for B2B and B2C</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
