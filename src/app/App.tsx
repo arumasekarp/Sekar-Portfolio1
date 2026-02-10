@@ -22,7 +22,7 @@ import project4Image from "../assets/Screenshot 2026-01-08 154403.png";
 import byonCombatImage from "../assets/ATK-BOLA_Byon-Combat-Showbiz-6.png";
 import hssSeriesImage from "../assets/ATK-BOLANET_HSS-Series-6_Fight-Card-reckma41rz0eljkcogsoegl0v7w0qq2duvrolrrv2m.jpg";
 import mmaBattleImage from "../assets/ATK-Bolanet_ONE-Pride-MMA-Battle-for-Glory-2025_Fight-Card.png";
-import additionalCombatImage from "../assets/images.jpg";
+import jalinanTerlarang from "../assets/WhatsApp Image 2026-02-10 at 5.51.07 PM.jpeg"
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,14 +73,14 @@ export default function App() {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-2">
               {['Home', 'About', 'Experience', 'Skills', 'Education', 'Projects', 'Committee'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`text-sm transition-colors ${activeSection === item.toLowerCase()
-                    ? 'text-cyan-600 font-semibold'
-                    : 'text-gray-600 hover:text-cyan-600'
+                  className={`text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 ${activeSection === item.toLowerCase()
+                      ? 'bg-gradient-to-r from-blue-400 to-blue-200 text-blue-900 shadow-md'
+                      : 'text-gray-600 hover:bg-gradient-to-r hover:from-blue-200 hover:to-blue-100 hover:text-blue-800'
                     }`}
                 >
                   {item}
@@ -175,16 +175,15 @@ export default function App() {
 
             {/* About Text */}
             <p className="text-gray-700 leading-relaxed text-lg">
-              Final-year <strong>Information Systems student at Universitas Indonesia</strong> with strong exposure to
-              <strong> IT project coordination, documentation, and operational support</strong> within corporate and
-              cross-functional environments. Selected as <strong>1 of 94 interns from 23,000+ applicants</strong> in
-               <strong> Magang Berdampak Batch 1</strong>, reflecting adaptability and the ability to operate in
-              structured, fast-paced settings. Experienced in supporting <strong>project planning, requirement
-                documentation, meeting coordination, timeline tracking, and stakeholder communication</strong>, as well as
-              participating in <strong>UAT/SIT activities</strong> and project closure documentation. Familiar with
-              internal IT operations including <strong>asset documentation, system compliance, and process standardization</strong>.
-              Highly detail-oriented, organized, and comfortable working closely with IT teams to ensure smooth
-              project execution and day-to-day operational efficiency.
+              Final-year <strong>Information Systems student at Universitas Indonesia</strong> with strong exposure to IT project
+              coordination, documentation, and operational support within corporate and cross-functional environments at
+              Vidio.com or PT Vidio Dot Com (EMTEK Group). Selected as <strong>one of 94 interns from 23,000+ applicants</strong> in Magang Berdampak Batch 1, reflecting
+              adaptability and the ability to operate in structured, fast-paced settings. Experienced in supporting project
+              planning, requirement documentation, meeting coordination, timeline tracking, and stakeholder communication, as well
+              as participating in UAT/SIT activities and project closure documentation. Familiar with internal IT operations,
+              including asset documentation, system compliance, and process standardization. Highly detail-oriented, organized,
+              and comfortable working closely with IT teams to ensure smooth project execution and day-to-day operational
+              efficiency.
             </p>
 
             {/* About Image */}
@@ -261,7 +260,7 @@ export default function App() {
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">Product Operations - Internship</h3>
-                  <p className="text-cyan-600 font-semibold">Vidio Dot Com (Emtek Group)</p>
+                  <p className="text-cyan-600 font-semibold">Vidio.com (Emtek Group)</p>
                   <p className="text-gray-600 flex items-center gap-2 mt-1">
                     <MapPin size={16} />
                     Central Jakarta
@@ -272,11 +271,19 @@ export default function App() {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
-                  <span>Analyzed <strong>70,000+ user sentiments</strong> from combat sports events (BYON Combat, HSS, and MMA), delivering insight decks for product prioritization and UX improvements, in collaboration with the Research team</span>
+                  <span>
+                    Monitored event-level KPIs of combat sports content (BYON Combat and HSS) and translated performance data into operational insights to support product readiness
+                  </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
-                  <span>Owned <strong>epic and 15+ ISO payment backlog stories</strong> (KOL internal system), from requirement validation to staging testing and production (<strong>~75% phase-1 delivery</strong>)</span>
+                  <span>
+                    Analyzed <strong>70,000+ user sentiments</strong> from combat sports events (BYON Combat, HSS, and MMA) using <strong>Python-based data processing</strong> to uncover <strong>critical in-event user pain points</strong>, translating findings into <strong>actionable insights</strong> that informed product prioritization and UX improvements in collaboration with the Research team
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-cyan-500 mt-1">•</span>
+                  <span>Owned <strong>epic and 15 ISO payment backlog stories</strong> (KOL internal system), from requirement validation to staging testing and production (<strong>~75% phase-1 delivery</strong>)</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
@@ -350,13 +357,16 @@ export default function App() {
                       className="w-full h-full object-cover"
                     />
                   </div>
+
+                  {/* Jalinan Terlarang */}
                   <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
                     <img
-                      src={additionalCombatImage}
-                      alt="Combat Sports Event Highlight"
+                      src={jalinanTerlarang}
+                      alt="Jalinan Terlarang"
                       className="w-full h-full object-cover"
                     />
                   </div>
+
                 </div>
               </div>
             </div>
@@ -365,7 +375,7 @@ export default function App() {
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Fullstack Developer - Contract Project</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Fullstack Developer - Internship</h3>
                   <p className="text-cyan-600 font-semibold">LB LIA English Course</p>
                   <p className="text-gray-600 flex items-center gap-2 mt-1">
                     <MapPin size={16} />
@@ -375,6 +385,10 @@ export default function App() {
                 <span className="text-gray-500 text-sm bg-cyan-50 px-4 py-2 rounded-full whitespace-nowrap">February 2025 - June 2025</span>
               </div>
               <ul className="space-y-2 text-gray-700 mb-6">
+                <li className="flex gap-3">
+                  <span className="text-cyan-500 mt-1">•</span>
+                  <span>Supported feature rollout and operational handover by aligning technical implementation, UAT results, and release documentation to ensure smooth system adoption by internal users</span>
+                </li>
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
                   <span>Optimized SQL queries and designed database schema using DBeaver to support accurate stock reporting pipelines and <strong>reduce data access time by 95%</strong>, contributing to data reliability and operational efficiency</span>
