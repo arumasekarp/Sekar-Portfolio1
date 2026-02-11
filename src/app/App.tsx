@@ -287,6 +287,10 @@ export default function App() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-cyan-500 mt-1">•</span>
+                  <span>Prepared and documented SOPs for PO and SPK Payment processes aligned with ISO requirements to support KOL Specialist financial operations</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-cyan-500 mt-1">•</span>
                   <span>Developed an AppSheet-based solution to streamline and reform the <strong>processing of 5,000+ subscription</strong> voucher requests for B2B and B2C</span>
                 </li>
                 <li className="flex gap-3">
