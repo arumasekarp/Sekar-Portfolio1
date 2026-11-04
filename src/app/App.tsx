@@ -22,7 +22,15 @@ import project4Image from "../assets/Screenshot 2026-01-08 154403.png";
 import byonCombatImage from "../assets/ATK-BOLA_Byon-Combat-Showbiz-6.png";
 import hssSeriesImage from "../assets/ATK-BOLANET_HSS-Series-6_Fight-Card-reckma41rz0eljkcogsoegl0v7w0qq2duvrolrrv2m.jpg";
 import mmaBattleImage from "../assets/ATK-Bolanet_ONE-Pride-MMA-Battle-for-Glory-2025_Fight-Card.png";
-import jalinanTerlarang from "../assets/WhatsApp Image 2026-02-10 at 5.51.07 PM.jpeg"
+import jalinanTerlarang from "../assets/WhatsApp Image 2026-02-10 at 5.51.07 PM.jpeg";
+import superbank1 from "../assets/SUPA1.jpeg";
+import superbank2 from "../assets/SUPA2.jpeg";
+import superbank3 from "../assets/SUPA3.jpeg";
+import superbank4 from "../assets/SUPA4.jpeg";
+import superbank5 from "../assets/SUPA5.jpeg";
+import superbank6 from "../assets/SUPA6.jpeg";
+import superbank7 from "../assets/SUPA7.jpeg";
+import superbank8 from "../assets/SUPA8.jpeg"
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -134,16 +142,16 @@ export default function App() {
                 <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
                   Wahyu Aji Aruma Sekar Puri
                 </h1>
-                <p className="text-xl text-cyan-700 font-semibold mb-6">Information Systems Student</p>
+                <p className="text-xl text-cyan-700 font-semibold mb-6">Fresh Graduate of Information Systems Student</p>
 
                 <div className="flex flex-wrap justify-center gap-4 mb-6">
                   <a href="tel:+6282271451879" className="flex items-center gap-2 text-gray-600 hover:text-cyan-600 transition-colors">
                     <Phone size={18} />
                     <span className="text-sm">+62 822-7145-1879</span>
                   </a>
-                  <a href="mailto:wahyu.aji21@ui.ac.id" className="flex items-center gap-2 text-gray-600 hover:text-cyan-600 transition-colors">
+                  <a href="mailto:kuliahsekar608@gmail.com" className="flex items-center gap-2 text-gray-600 hover:text-cyan-600 transition-colors">
                     <Mail size={18} />
-                    <span className="text-sm">wahyu.aji21@ui.ac.id</span>
+                    <span className="text-sm">kuliahsekar608@gmail.com</span>
                   </a>
                   <a href="https://linkedin.com/in/wahyu-aji-aruma-sekar-puri" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-cyan-600 transition-colors">
                     <Linkedin size={18} />
@@ -175,27 +183,32 @@ export default function App() {
 
             {/* About Text */}
             <p className="text-gray-700 leading-relaxed text-lg">
-              Final-year <strong>Information Systems student at Universitas Indonesia</strong> with strong exposure to IT project
-              coordination, documentation, and operational support within corporate and cross-functional environments at
-              Vidio.com or PT Vidio Dot Com (EMTEK Group). Selected as <strong>one of 94 interns from 23,000+ applicants</strong> in Magang Berdampak Batch 1, reflecting
-              adaptability and the ability to operate in structured, fast-paced settings. Experienced in supporting project
-              planning, requirement documentation, meeting coordination, timeline tracking, and stakeholder communication, as well
-              as participating in UAT/SIT activities and project closure documentation. Familiar with internal IT operations,
-              including asset documentation, system compliance, and process standardization. Highly detail-oriented, organized,
-              and comfortable working closely with IT teams to ensure smooth project execution and day-to-day operational
-              efficiency.
-            </p>
+  Information Systems graduate from <strong>Universitas Indonesia</strong> with hands-on Product experience across fintech, media, and technology operations.
+  Selected as <strong>1 of 94 interns from 23,000+ applicants</strong> in <strong>Vidio</strong>'s Magang Berdampak Batch 1. Experienced in translating business and technical
+  requirements into PRDs, user journeys, UAT, and product improvements, with fintech exposure through <strong>Superbank</strong>'s digital banking (<strong>Grab</strong>'s ecosystem).
+  Interested in driving customer-focused product development and scalable digital finance solutions.
+</p>
+{/* Superbank Image */}
+<div className="flex justify-center mb-6">
+  <div className="rounded-xl overflow-hidden shadow-md max-w-3xl">
+    <img
+      src={superbank1}
+      alt="Superbank Documentation"
+      className="w-full h-auto object-contain"
+    />
+  </div>
+</div>
 
-            {/* About Image */}
-            <div className="flex justify-center">
-              <div className="rounded-xl overflow-hidden shadow-md max-w-3xl">
-                <img
-                  src={aboutImage}
-                  alt="About Documentation"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            </div>
+{/* About Image */}
+<div className="flex justify-center">
+  <div className="rounded-xl overflow-hidden shadow-md max-w-3xl">
+    <img
+      src={aboutImage}
+      alt="About Documentation"
+      className="w-full h-auto object-contain"
+    />
+  </div>
+</div>
 
           </div>
         </div>
@@ -215,7 +228,7 @@ export default function App() {
                 <h3 className="text-2xl font-bold text-gray-900">Universitas Indonesia</h3>
                 <p className="text-cyan-600 text-lg font-semibold">Bachelor of Information System</p>
               </div>
-              <span className="text-gray-500 bg-cyan-50 px-4 py-2 rounded-full">2022 - Present</span>
+              <span className="text-gray-500 bg-cyan-50 px-4 py-2 rounded-full">2022 - 2026</span>
             </div>
 
             <div className="mb-6">
@@ -255,6 +268,125 @@ export default function App() {
           </div>
 
           <div className="space-y-6">
+            {/* Superbank */}
+<div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+    <div>
+      <h3 className="text-xl font-bold text-gray-900">
+        Product Manager - Internship
+      </h3>
+      <p className="text-cyan-600 font-semibold">Superbank</p>
+      <p className="text-gray-600 flex items-center gap-2 mt-1">
+        <MapPin size={16} />
+        South Jakarta
+      </p>
+    </div>
+    <span className="text-gray-500 text-sm bg-cyan-50 px-4 py-2 rounded-full whitespace-nowrap">
+      May 2026 - November 2026
+    </span>
+  </div>
+
+  <ul className="space-y-2 text-gray-700">
+    <li className="flex gap-3">
+      <span className="text-cyan-500 mt-1">•</span>
+      <span>
+        Developed <strong>6 PRDs</strong> across onboarding items (KYC, CVP,
+        document validation, etc.), supporting product lifecycle delivery
+      </span>
+    </li>
+
+    <li className="flex gap-3">
+      <span className="text-cyan-500 mt-1">•</span>
+      <span>
+        Managed RIPLAY Phase 1–3 development for Superbank products and
+        embedded ecosystems, including <strong>OVO, Grab, and Akulaku</strong>
+      </span>
+    </li>
+
+    <li className="flex gap-3">
+      <span className="text-cyan-500 mt-1">•</span>
+      <span>
+        Created and maintained <strong>50+ trackers</strong> to monitor
+        embedded loan progress and coordination across Grab and OVO ecosystems
+      </span>
+    </li>
+
+<li className="flex gap-3">
+  <span className="text-cyan-500 mt-1">•</span>
+  <span>
+    Executed UAT for PAS lending features across embedded loan journeys,
+    including <strong>PAS PAY (98% performance validation)</strong> and
+    <strong> PAS PAY OVO Nabung (70% transaction and repayment coverage)</strong>,
+    identifying issues and validating product readiness before launch
+  </span>
+</li>
+
+    <li className="flex gap-3">
+      <span className="text-cyan-500 mt-1">•</span>
+      <span>
+        Performed A/B testing on onboarding items, identifying improvements
+        that increased onboarding performance by <strong>15% overall</strong>
+      </span>
+    </li>
+
+    <li className="flex gap-3">
+      <span className="text-cyan-500 mt-1">•</span>
+      <span>
+        Handled <strong>100+ tickets</strong> to diagnose and resolve technical
+        product issues across multiple onboarding channels and customer journeys
+      </span>
+    </li>
+
+    <li className="flex gap-3">
+      <span className="text-cyan-500 mt-1">•</span>
+      <span>
+        Translated technical requirements into user flows and acceptance
+        criteria to support cross-functional delivery
+      </span>
+    </li>
+  </ul>
+
+  {/* Superbank Work Highlights */}
+  <div className="border-t border-gray-200 pt-6 mt-6">
+    <h4 className="text-sm font-semibold text-gray-700 mb-3">
+      Work Highlights
+    </h4>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+        <img
+          src={superbank5}
+          alt="Superbank Work Highlight 1"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+        <img
+          src={superbank6}
+          alt="Superbank Work Highlight 2"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+        <img
+          src={superbank7}
+          alt="Superbank Work Highlight 3"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+        <img
+          src={superbank8}
+          alt="Superbank Work Highlight 4"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</div>
             {/* Vidio */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
@@ -924,59 +1056,61 @@ export default function App() {
       </section>
 
       {/* Documentation Section */}
-      <div className="border-t border-gray-200 pt-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<div className="border-t border-gray-200 pt-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
-            <img
-              src={docImage1}
-              alt="Documentation 1"
-              className="w-full h-full object-cover"
-            />
-          </div>
+    {/* Superbank Photos */}
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img
+        src={superbank2}
+        alt="Superbank Documentation 2"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
-            <img
-              src={docImage2}
-              alt="Documentation 2"
-              className="w-full h-full object-cover"
-            />
-          </div>
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img
+        src={superbank3}
+        alt="Superbank Documentation 3"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
-            <img
-              src={docImage3}
-              alt="Documentation 3"
-              className="w-full h-full object-cover"
-            />
-          </div>
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img
+        src={superbank4}
+        alt="Superbank Documentation 4"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
-            <img
-              src={docImage4}
-              alt="Documentation 4"
-              className="w-full h-full object-cover"
-            />
-          </div>
+    {/* Existing Documentation Photos */}
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img src={docImage1} alt="Documentation 1" className="w-full h-full object-cover" />
+    </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
-            <img
-              src={docImage5}
-              alt="Documentation 5"
-              className="w-full h-full object-cover"
-            />
-          </div>
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img src={docImage2} alt="Documentation 2" className="w-full h-full object-cover" />
+    </div>
 
-          <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
-            <img
-              src={docImage6}
-              alt="Documentation 6"
-              className="w-full h-full object-cover"
-            />
-          </div>
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img src={docImage3} alt="Documentation 3" className="w-full h-full object-cover" />
+    </div>
 
-        </div>
-      </div>
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img src={docImage4} alt="Documentation 4" className="w-full h-full object-cover" />
+    </div>
+
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img src={docImage5} alt="Documentation 5" className="w-full h-full object-cover" />
+    </div>
+
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow aspect-[4/3]">
+      <img src={docImage6} alt="Documentation 6" className="w-full h-full object-cover" />
+    </div>
+
+  </div>
+</div>
 
       {/* Footer */}
       <footer className="bg-gradient-to-r from-cyan-600 via-blue-600 to-sky-600 text-white py-12 px-4">
@@ -990,9 +1124,9 @@ export default function App() {
                 <Phone size={20} />
                 <span>+62 822-7145-1879</span>
               </a>
-              <a href="mailto:wahyu.aji21@ui.ac.id" className="flex items-center gap-2 hover:text-cyan-200 transition-colors">
+              <a href="mailto:kuliahsekar608@gmail.com" className="flex items-center gap-2 hover:text-cyan-200 transition-colors">
                 <Mail size={20} />
-                <span>wahyu.aji21@ui.ac.id</span>
+                <span>kuliahsekar608@gmail.com</span>
               </a>
               <a href="https://linkedin.com/in/wahyu-aji-aruma-sekar-puri" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-cyan-200 transition-colors">
                 <Linkedin size={20} />
